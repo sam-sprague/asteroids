@@ -45,7 +45,7 @@ class Player(CircleShape):
         self.position += distance
 
     def shoot(self):
-        if self.timer > 0:
+        if self.shot_timer > 0:
             return
         self.shot_timer = PLAYER_SHOOT_COOLDOWN
         shot = Shot(self.position.x, self.position.y)
